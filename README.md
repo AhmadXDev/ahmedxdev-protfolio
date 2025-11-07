@@ -1,255 +1,178 @@
-# Profit.io 🚀
+# Ahmad Alhukail - Portfolio Website
 
-A highly interactive and visually polished UI/UX web application built with Next.js 15 and React 19.
+A modern, premium portfolio website showcasing my professional identity, projects, skills, and experience. Built with cutting-edge web technologies and designed with a focus on clean UI/UX, smooth animations, and visual hierarchy.
 
-## ✨ Features
+## 🌟 Live Demo
 
-- **Next.js 15** with App Router and React 19
-- **TypeScript** for full type safety
-- **Tailwind CSS** for utility-first styling
-- **Framer Motion** for smooth animations and transitions
-- **Shadcn/UI** for accessible, modern UI components
-- **SCSS & CSS Modules** for custom styling flexibility
-- **Lucide React & React Icons** for comprehensive iconography
-- **ESLint & Prettier** configured for code quality
-- **Vercel-ready** deployment configuration
+Visit the live website: [Coming Soon]
+
+## 🚀 Features
+
+- **Modern Design**: Premium, portfolio-grade aesthetic with strong visual hierarchy
+- **Smooth Animations**: Framer Motion-powered transitions and scroll animations
+- **Fully Responsive**: Optimized for all devices from mobile to desktop
+- **AI-Driven Content**: All content derived from actual resume data
+- **Performance Optimized**: Built with Next.js 15 for optimal performance
+- **SEO Friendly**: Comprehensive metadata and semantic HTML
+- **Dark Mode Ready**: Design system supports light and dark themes
+
+## 📑 Sections
+
+1. **Hero Section**: Eye-catching introduction with name, role, and tagline
+2. **Projects**: Showcase of featured projects with technologies and descriptions
+3. **Experience**: Professional work experience with timeline design
+4. **About**: Comprehensive overview including education, skills, and certifications
+5. **Contact**: Easy-to-access contact information and social links
 
 ## 🛠️ Tech Stack
 
-| Technology    | Version   | Purpose                         |
-| ------------- | --------- | ------------------------------- |
-| Next.js       | 16.0.1    | React framework with App Router |
-| React         | 19.2.0    | UI library                      |
-| TypeScript    | ^5        | Type safety                     |
-| Tailwind CSS  | ^4        | Utility-first CSS               |
-| Framer Motion | ^12.23.24 | Animations                      |
-| Shadcn/UI     | Latest    | Component library               |
-| Lucide React  | ^0.553.0  | Icon library                    |
-| React Icons   | ^5.5.0    | Additional icons                |
-| SASS          | ^1.93.3   | SCSS support                    |
+### Core
+- **Next.js 15** - React framework with App Router
+- **React 19** - Latest React features
+- **TypeScript** - Type-safe development
 
-## 📦 Installation
+### Styling
+- **Tailwind CSS** - Utility-first CSS framework
+- **SCSS** - Additional styling capabilities
+- **Shadcn/UI** - High-quality UI components
 
+### Animation
+- **Framer Motion** - Production-ready motion library
+
+### Icons & Design
+- **Lucide React** - Beautiful icon library
+- **React Icons** - Additional icon sets
+
+### Code Quality
+- **ESLint** - Linting
+- **Prettier** - Code formatting
+
+## 📁 Project Structure
+
+```
+ahmedxdev-protfolio/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx             # Main homepage
+│   └── globals.css          # Global styles
+├── components/
+│   ├── ui/
+│   │   ├── button.tsx       # Button component
+│   │   ├── card.tsx         # Card component
+│   │   ├── badge.tsx        # Badge component
+│   │   └── section-heading.tsx  # Section heading component
+│   └── navigation.tsx       # Navigation bar
+├── sections/
+│   ├── hero.tsx             # Hero/landing section
+│   ├── projects.tsx         # Projects showcase
+│   ├── experience.tsx       # Work experience
+│   ├── about.tsx            # About me section
+│   └── contact.tsx          # Contact information
+├── data/
+│   └── resume.ts            # Structured resume data
+├── lib/
+│   └── utils.ts             # Utility functions
+└── styles/                  # Additional styles
+```
+
+## 🚦 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
 ```bash
-# Install dependencies
+git clone https://github.com/ahmedxdev/ahmedxdev-protfolio.git
+cd ahmedxdev-protfolio
+```
+
+2. Install dependencies:
+```bash
 npm install
+```
 
-# Run development server
+3. Run the development server:
+```bash
 npm run dev
+```
 
-# Build for production
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
+
+```bash
 npm run build
-
-# Start production server
 npm start
-
-# Run linter
-npm run lint
-
-# Format code with Prettier
-npm run format
-
-# Check formatting
-npm run format:check
 ```
 
-## 🎨 Project Structure
+## 📝 Available Scripts
 
-```
-profit-io/
-├── app/                      # Next.js app directory
-│   ├── layout.tsx           # Root layout with page transitions
-│   ├── page.tsx             # Homepage
-│   └── globals.css          # Global styles with Tailwind
-├── components/              # Reusable components
-│   ├── ui/                  # Shadcn/UI components
-│   ├── page-transition.tsx  # Page transition wrapper
-│   ├── fade-in.tsx          # Fade-in animation component
-│   └── stagger-container.tsx # Stagger animation container
-├── hooks/                   # Custom React hooks
-│   └── use-scroll-progress.ts # Scroll animation hooks
-├── lib/                     # Utility functions
-│   └── utils.ts            # Class utilities (cn helper)
-├── styles/                  # SCSS files
-│   ├── example.module.scss # CSS Module example
-│   └── globals.scss        # Global SCSS styles
-└── public/                 # Static assets
-
-```
-
-## 🎭 Animation Components
-
-### PageTransition
-
-Wraps pages with smooth enter/exit animations:
-
-```tsx
-import { PageTransition } from "@/components/page-transition";
-
-<PageTransition>{children}</PageTransition>;
-```
-
-### FadeIn
-
-Animates elements as they enter the viewport:
-
-```tsx
-import { FadeIn } from "@/components/fade-in";
-
-<FadeIn delay={0.2} direction="up">
-  <h1>Animated Heading</h1>
-</FadeIn>;
-```
-
-### StaggerContainer
-
-Creates staggered animations for lists:
-
-```tsx
-import { StaggerContainer, StaggerItem } from "@/components/stagger-container";
-
-<StaggerContainer staggerDelay={0.1}>
-  <StaggerItem>Item 1</StaggerItem>
-  <StaggerItem>Item 2</StaggerItem>
-  <StaggerItem>Item 3</StaggerItem>
-</StaggerContainer>;
-```
-
-## 🎨 Styling Approaches
-
-This project supports multiple styling methods:
-
-### 1. Tailwind CSS (Primary)
-
-```tsx
-<div className="bg-primary flex items-center gap-4 rounded-lg p-4">Content</div>
-```
-
-### 2. CSS Modules with SCSS
-
-```tsx
-import styles from "@/styles/example.module.scss";
-
-<div className={styles.container}>
-  <div className={styles.card}>Content</div>
-</div>;
-```
-
-### 3. Class Variance Authority
-
-```tsx
-import { cva } from "class-variance-authority";
-
-const buttonVariants = cva("base-classes", {
-  variants: {
-    variant: {
-      primary: "bg-primary text-white",
-      secondary: "bg-secondary text-black",
-    },
-  },
-});
-```
-
-### 4. CN Helper (Tailwind Merge + clsx)
-
-```tsx
-import { cn } from "@/lib/utils";
-
-<div className={cn("base-class", condition && "conditional-class")}>Content</div>;
-```
-
-## 🧩 Adding Shadcn/UI Components
-
-```bash
-# Add a specific component
-npx shadcn@latest add button
-
-# Add multiple components
-npx shadcn@latest add button card dialog
-
-# Browse available components
-npx shadcn@latest
-```
-
-## 🎯 Custom Hooks
-
-### useScrollProgress
-
-Track scroll progress with smooth spring animation:
-
-```tsx
-import { useScrollProgress } from "@/hooks/use-scroll-progress";
-
-const { scrollYProgress, smoothProgress } = useScrollProgress();
-```
-
-### useParallax
-
-Create parallax scroll effects:
-
-```tsx
-import { useParallax } from "@/hooks/use-scroll-progress";
-
-const y = useParallax(ref, 100);
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import your repository in Vercel
-3. Vercel will automatically detect Next.js and deploy
-
-Or use the Vercel CLI:
-
-```bash
-npm install -g vercel
-vercel
-```
-
-### Environment Variables
-
-Copy `env.example` to `.env.local` and fill in your values:
-
-```bash
-cp env.example .env.local
-```
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
 
 ## 🎨 Customization
 
-### Colors & Theme
+### Update Content
 
-Edit `app/globals.css` to customize your color scheme. The project uses CSS variables with oklch color space for better color manipulation.
+All content is centralized in `data/resume.ts`. Update this file to reflect your own information:
 
-### Fonts
+- Personal information (name, email, location, etc.)
+- Projects with descriptions and technologies
+- Work experience and responsibilities
+- Education and certifications
+- Skills (technical and soft skills)
 
-Fonts are configured in `app/layout.tsx`. The project uses:
+### Modify Styling
 
-- **Geist Sans** for body text
-- **Geist Mono** for code
+- **Global styles**: Edit `app/globals.css`
+- **Theme colors**: Modify CSS variables in `globals.css`
+- **Component styles**: Update Tailwind classes in individual components
 
-### Animation Settings
+### Add New Sections
 
-Adjust animation settings in component files or create your own variants.
+1. Create a new component in the `sections/` directory
+2. Import and add it to `app/page.tsx`
+3. Add navigation link in `components/navigation.tsx`
 
-## 📚 Learn More
+## 🌐 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [React Documentation](https://react.dev)
-- [Tailwind CSS](https://tailwindcss.com/docs)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Shadcn/UI](https://ui.shadcn.com/)
-- [Lucide Icons](https://lucide.dev/)
+### Deploy to Vercel (Recommended)
 
-## 🤝 Contributing
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and deploy
 
-This is a starter template. Feel free to customize it for your needs!
+### Manual Deployment
 
-## 📝 License
+```bash
+npm run build
+# Deploy the .next folder and public assets to your hosting provider
+```
 
-MIT License - feel free to use this template for your projects.
+## 📧 Contact
+
+- **Email**: ahmad.yasarg@gmail.com
+- **LinkedIn**: [Ahmad Alhukail](https://www.linkedin.com/in/ahmad-alhukail-359342283/)
+- **Location**: Riyadh, Saudi Arabia
+
+## 📄 License
+
+This project is open source and available for personal use and modification.
+
+## 🙏 Acknowledgments
+
+- Shadcn for the amazing UI component library
+- Vercel for Next.js and hosting platform
+- Framer for the Motion animation library
 
 ---
 
-Built with ❤️ using the latest web technologies.
+Built with ❤️ by Ahmad Alhukail
