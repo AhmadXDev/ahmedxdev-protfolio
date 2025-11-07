@@ -1,0 +1,59 @@
+// Example CSS Module with SCSS features
+// Use this as a reference for custom component styling
+
+$primary-color: #3b82f6;
+$secondary-color: #8b5cf6;
+$border-radius: 0.5rem;
+$spacing: 1rem;
+
+.container {
+  padding: $spacing * 2;
+  border-radius: $border-radius;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+
+  &:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: $border-radius;
+  padding: $spacing;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: $spacing / 2;
+  }
+
+  .content {
+    color: #6b7280;
+    line-height: 1.6;
+  }
+}
+
+// Responsive utilities
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "mobile" {
+    @media (max-width: 640px) {
+      @content;
+    }
+  } @else if $breakpoint == "tablet" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+.responsive {
+  @include respond-to("mobile") {
+    padding: $spacing;
+  }
+
+  @include respond-to("tablet") {
+    padding: $spacing * 1.5;
+  }
+}

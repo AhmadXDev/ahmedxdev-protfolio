@@ -1,0 +1,54 @@
+// Global SCSS styles
+// This file demonstrates SCSS capabilities
+
+// Variables
+$font-family:
+  system-ui,
+  -apple-system,
+  sans-serif;
+$transition-speed: 0.3s;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+// Global utility classes
+.glass {
+  @include glassmorphism;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+// Smooth scroll
+html {
+  scroll-behavior: smooth;
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
