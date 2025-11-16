@@ -14,6 +14,20 @@ export const metadata: Metadata = {
     title: "Ahmad Alhukail - Portfolio",
     description: "IT Student & AI-Driven Developer passionate about building intelligent solutions",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ahmad Alhukail - Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ahmad Alhukail - Portfolio",
+    description: "IT Student & AI-Driven Developer passionate about building intelligent solutions",
+    images: ["/og-image.png"],
   },
 };
 
