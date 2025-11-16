@@ -14,8 +14,7 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, onViewDetails }: ProjectCardProps) {
-  const thumbnail = project.images?.[0]?.src || project.features?.[0]?.image;
-  const bannerImage = project.banner || thumbnail;
+  const thumbnail = project.banner || project.images?.[0]?.src || project.features?.[0]?.image;
   const hasDetails = project.features || project.images;
   const isMobileApp = project.category === "Mobile App";
 
@@ -106,10 +105,10 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps) {
           </div>
 
           {/* Banner Image */}
-          {bannerImage && (
+          {thumbnail && (
             <div className="relative w-full h-100 rounded-lg overflow-hidden bg-linear-to-br from-primary/5 to-primary/10">
               <Image
-                src={bannerImage}
+                src={thumbnail}
                 alt={project.title}
                 fill
                 className="object-cover"

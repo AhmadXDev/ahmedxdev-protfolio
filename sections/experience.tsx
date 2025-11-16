@@ -7,7 +7,7 @@ import { workExperience } from "@/data/resume";
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 px-4 bg-muted/50">
+    <section id="experience" className="py-20 px-4">
       <div className="container mx-auto">
         <FadeIn direction="up">
           <SectionHeading title="Experience" subtitle="My professional journey" />

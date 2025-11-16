@@ -8,7 +8,7 @@ import { personalInfo } from "@/data/resume";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/50">
+    <section id="contact" className="py-20 px-4">
       <div className="container mx-auto max-w-2xl">
         <FadeIn direction="up">
           <SectionHeading title="Get In Touch" subtitle="Let's work together" />

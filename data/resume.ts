@@ -88,7 +88,7 @@ export const personalInfo: PersonalInfo = {
 
 // Profile Summary
 export const profileSummary: string =
-  "Dedicated IT student at Imam University, passionate about artificial intelligence, cloud computing, data analytics, and cybersecurity. Experienced in AI-assisted software, Web, and mobile development using React, Flutter, React Native, and Electron. Skilled at integrating AI tools like GitHub Copilot, Cursor, and ChatGPT into development workflows to enhance productivity and research outcomes. Strong leadership, documentation, and problem-solving abilities, with a focus on innovation and practical AI application in real-world environments.";
+  "I'm passionate about artificial intelligence, cloud computing, and Cybersecurity. Experienced in web, mobile, and AI agents development. Skilled in utilizing AI tools like GitHub Copilot and Cursor to improve development efficiency and research. Strong problem-solving and documentation skills, with a focus on innovation and applying AI in real-world solutions.";
 
 // Education
 export const education: Education = {
@@ -96,11 +96,16 @@ export const education: Education = {
   degree: "Bachelor of Information Technology",
   period: "2022 – 2026",
   location: "Riyadh, Saudi Arabia",
-  gpa: "4.39 / 5 (Expected 4.5 before training)",
+  gpa: "4.39 / 5 (Expected 4.5 after graduation)",
 };
 
 // Certifications
 export const certifications: Certification[] = [
+  {
+    name: "Microsoft Azure Administrator Associate (In Progress)",
+    issuer: "Microsoft",
+    details: "Demonstrate key skills to configure, manage, secure, and administer key professional functions in Microsoft Azure.",
+  },
   {
     name: "Flutter Bootcamp",
     issuer: "Imam University (Ejad Club)",
@@ -112,49 +117,71 @@ export const certifications: Certification[] = [
 // Skills
 export const skills: Skill[] = [
   {
-    category: "Programming Languages",
-    items: ["Java", "Python", "C#", "JavaScript", "PHP", "SQL", "Dart", "GDScript"],
-  },
-  {
-    category: "Frameworks & Libraries",
-    items: ["React", "React Native", "Flutter", "Node.js", "Electron"],
-  },
-  {
-    category: "Development Tools & Platforms",
-    items: [
-      "VS Code",
-      "GitHub",
-      "GitHub Desktop",
-      "Docker",
-      "N8N",
-      "Azure",
-      "Android Studio",
-      "Oracle VM",
-      "Postman",
-    ],
-  },
-  {
-    category: "Design & Productivity Tools",
-    items: ["Figma", "Notion", "Obsidian", "Coda", "Word", "Excel", "PowerPoint", "OneNote"],
-  },
-  {
-    category: "Databases",
-    items: ["Supabase", "Firebase", "MySQL"],
-  },
-  {
     category: "Artificial Intelligence (AI)",
     items: [
-      "GitHub Copilot",
-      "Cursor AI",
-      "ChatGPT",
+      "Azure AI Foundry",
+      "Claude Agent SDK",
+      "ChatGPT Custom Agent",
       "AI API Integration",
       "MCP configuration",
       "Prompt Engineering",
     ],
   },
   {
+    category: "Cloud Technologies",
+    items: ["Azure", "AWS", "Google Cloud", "Firebase"],
+  },
+  {
+    category: "Mobile Development",
+    items: ["React Native", "Flutter", "Android Studio"],
+  },
+  {
+    category: "Automation Technologies",
+    items: ["N8N", "Make", "Zapier", "Microsoft Automate"],
+  },
+  {
+    category: "Programming Languages",
+    items: ["Java", "Python", "C#", "JavaScript", "SQL", "Dart", "GDScript"],
+  },
+  {
+    category: "Tools and Libraries",
+    items: [
+      "VS Code",
+      "Visual Studio",
+      "GitHub Copilot",
+      "Cursor AI",
+      "Claude Code",
+      "GitHub",
+      "Docker",
+      "Oracle VM",
+      "Postman",
+      "React",
+      "Node.js",
+      "Electron",
+    ],
+  },
+  {
+    category: "Design & Productivity Tools",
+    items: [
+      "Figma",
+      "Notion",
+      "Obsidian",
+      "Coda",
+      "Word",
+      "Excel",
+      "PowerPoint",
+      "OneNote",
+      "Canva",
+      "Adobe Photoshop",
+    ],
+  },
+  {
+    category: "Databases",
+    items: ["Microsoft SQL Server", "MySQL", "Supabase", "Firebase"],
+  },
+  {
     category: "Web Development",
-    items: ["HTML", "CSS", "TailwindCSS"],
+    items: ["HTML", "JavaScript", "PHP", "CSS", "TailwindCSS"],
   },
   {
     category: "Operating Systems & Shells",
@@ -174,12 +201,8 @@ export const workExperience: WorkExperience[] = [
     location: "Riyadh, Saudi Arabia",
     period: "Jul 2025 – Present",
     description:
-      "Collaborating with the IRD team to enhance productivity through AI-driven solutions and process optimization.",
-    achievements: [
-      "Designed and implemented a documentation system integrated with GitHub and Obsidian, enabling automatic synchronization, free version control, and AI accessibility within the same repository.",
-      "Built a React Native mobile app prototype connected to company APIs, demonstrating AI-assisted code generation and automation using GitHub, GitHub Copilot, and Cursor.",
-      "Designed workflows to transform legacy Excel documentation into AI-readable formats, enhancing accessibility for development tools.",
-    ],
+      "Researched AI-driven solutions to improve productivity, automate documentation, and explore innovative technologies to enhance workflows and prototype ERP mobile apps using React Native, Cursor, and Copilot.",
+    achievements: [],
   },
 ];
 
@@ -192,6 +215,7 @@ export const projects: Project[] = [
     technologies: ["React", "React Native", "Supabase", "AI Integration"],
     details:
       "Integrated AI to analyze study habits, predict performance, and notify students about exam readiness based on data. Designed user experience to promote motivation and accountability among students.",
+    status: "Project showcase coming soon",
   },
   {
     title: "College Tracker - Desktop Productivity App",
@@ -199,6 +223,7 @@ export const projects: Project[] = [
     technologies: ["Electron", "JavaScript", "Node.js"],
     details:
       "Inspired the concept behind the StudyPilot project and demonstrated early innovation in productivity-focused software.",
+    status: "Project showcase coming soon",
   },
   {
     title: "ReadMyLib - Flutter App for Speech Assistance",
@@ -206,12 +231,14 @@ export const projects: Project[] = [
       "Mobile app that interprets lip movements and converts them into audible speech for users with disabilities using AI-based APIs.",
     technologies: ["Flutter", "Dart", "AI APIs", "Camera Integration", "Speech Synthesis"],
     details: "Integrated real-time camera data and speech synthesis APIs.",
+    status: "Project showcase coming soon",
   },
   {
     title: "Hasib Mobile - React Native Prototype",
     description:
       "Prototype mobile app using React Native to connect with the company's ERP system API and demonstrate AI-assisted development.",
     technologies: ["React Native", "JavaScript", "API Integration", "AI-Assisted Development"],
+    status: "Project showcase coming soon",
   },
   {
     title: "Flacardy — Flutter Learning App",
@@ -298,6 +325,7 @@ export const projects: Project[] = [
     description:
       "Independent game prototype in Godot using GDScript to explore interactive storytelling and game logic.",
     technologies: ["Godot Engine", "GDScript", "Game Development"],
+    status: "Project showcase coming soon",
   },
 ];
 
